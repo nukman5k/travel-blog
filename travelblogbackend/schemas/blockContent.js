@@ -9,8 +9,9 @@ export default {
             style: [
                 {
                     title: 'Normal',
-                    value: 'normal'
+                    value: 'normal',
                 }
             ]
-
         }
+    ]
+}
