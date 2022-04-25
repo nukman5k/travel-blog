@@ -47,10 +47,10 @@ export default {
             title: 'Published At',
             type: 'datetime',
         },
-        // {
-        //     name: 'body',
-        //     title: 'Body',
-        //     type: 'blockContent',
-        // }
+        {
+            name: 'body',
+            title: 'Body',
+            type: 'blockContent',
+        }
     ]
 };
