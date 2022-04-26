@@ -2,12 +2,11 @@
 const getPosition = (position) => {
     if (navigator.geolocation) {
         return new Promise((resolve, reject) => {
-            navigator.geolocation.getCurrentPosition(resolve, reject, options);
-        });
+            navigator.geolocation.getCurrentPosition(resolve, reject, options)
+        })
     }
-
 }
-
+// video @ 31:38
 export default {
     name: 'post',
     title: 'Blog Post',
@@ -50,7 +49,7 @@ export default {
             name: 'author',
             title: 'Author',
             type: 'reference',
-            to: [{ type: 'author' }],
+            to: { type: 'author' },
         },
         {
             name: 'mainImage',
@@ -64,7 +63,7 @@ export default {
             name: 'categories',
             title: 'Categories',
             type: 'array',
-            of: [{ type: 'reference', to: [{ type: 'category' }] }],
+            of: [{ type: 'reference', to: { type: 'category' }}],
         },
         {
             name: 'publishedAt',
