@@ -27,5 +27,8 @@
     "react-dom": "^17.0",
     "sanity-plugin-leaflet-input": "^1.0.1",
     "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11"
   }
 }

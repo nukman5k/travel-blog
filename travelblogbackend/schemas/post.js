@@ -1,12 +1,12 @@
 
-const getPosition = (position) => {
+const getPosition = (options) => {
     if (navigator.geolocation) {
         return new Promise((resolve, reject) => {
             navigator.geolocation.getCurrentPosition(resolve, reject, options)
-        })
-    }
+        });
+    };
 }
-// video @ 31:38
+// video @ 31:38 
 export default {
     name: 'post',
     title: 'Blog Post',
@@ -20,7 +20,7 @@ export default {
                     _type: 'geopoint',
                     lat: latitude,
                     lng: longitude,
-                    alt: altitude || undefined
+                    alt: altitude || undefined,
                 }
             })
             .catch(() => undefined)
@@ -63,7 +63,7 @@ export default {
             name: 'categories',
             title: 'Categories',
             type: 'array',
-            of: [{ type: 'reference', to: { type: 'category' }}],
+            of: [{ type: 'reference', to: { type: 'category' } }],
         },
         {
             name: 'publishedAt',
