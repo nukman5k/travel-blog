@@ -32,6 +32,11 @@ export default {
             type: 'geopoint',
         },
         {
+            name: 'address',
+            title: 'Address',
+            type: 'string',
+        },
+        {
             name: 'title',
             title: 'Title',
             type: 'string',
